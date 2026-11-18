@@ -335,6 +335,9 @@
   .video-card.placeholder .video-foot span:last-child { font-size:0; }
   .video-card.placeholder .video-foot span:last-child::after { content:"~1:30"; font-size:13px; }
   header.nav nav { display:none; }
+  .video-card video { aspect-ratio:1/1; object-fit:cover; width:100%; }
+  .video-wrap { max-width:440px; margin-left:auto; }
+  @media (max-width:760px) { .video-wrap { margin:0 auto; } }
 
 </style>
 </head>
@@ -358,11 +361,10 @@
       </div>
       
       <div class="video-wrap">
-        <!-- VIDEO SLOT: add {"video": {"url": "...mp4", "poster": "...jpg", "duration": "1:00"}} to content.json -->
-        <div class="video-card placeholder">
+        <div class="video-card">
           <div class="video-head"><span class="avatar">P</span><div><b>Pavel</b><br><small>Candidate · VP of Product</small></div></div>
-          <div class="video-slot"><span class="play">▶</span><span>A 90-second hello is on its way</span></div>
-          <div class="video-foot"><span>Video for MEDvidi</span><span>~1:00</span></div>
+          <video controls playsinline preload="metadata" src="medvidi.mp4" poster="medvidi-poster.jpg"></video>
+          <div class="video-foot"><span>Video for MEDvidi</span><span class="vdur">1:33</span></div>
         </div>
       </div>
     </div>
