@@ -332,6 +332,9 @@
   .halves .kicker:empty { display:none; }
   .doodle { border-radius:4px 0 0 4px; padding:8px 46px 12px 20px; clip-path:polygon(0 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 0 100%); }
   @media (max-width:760px) { .doodle { padding:6px 32px 8px 14px; clip-path:polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%); } }
+  .video-card.placeholder .video-foot span:last-child { font-size:0; }
+  .video-card.placeholder .video-foot span:last-child::after { content:"~1:30"; font-size:13px; }
+  header.nav nav { display:none; }
 
 </style>
 </head>
@@ -345,9 +348,9 @@
     </header>
     <div class="hero-grid">
       <div>
-        <div style="margin-top:36px"><span class="pill">Re: VP of Product</span><span class="pill">8+ years in product &amp; business</span><span class="pill">Russian native · English C1</span><span class="pill">Based in Barcelona</span></div>
-        <h1>Hi! I&#x27;m Pavel.<br>We need to talk. Urgently.</h1>
-        <p class="hero-sub">Give me 1 minute to convince you!</p>
+        <div style="margin-top:36px"><a class="pill" href="https://medvidi.com/careers/co/remote/48.86D-15.60A/vp-of-product/all" target="_blank" rel="noopener" style="text-decoration:none">Re: VP of Product ↗</a><span class="pill">8+ years in product &amp; business</span><span class="pill">Russian native · English C1</span><span class="pill">Based in Barcelona</span></div>
+        <h1>Hi, Vasili! I&#x27;m Pavel.<br>We need to talk. Urgently.</h1>
+        <p class="hero-sub">Give me 1.5 minutes to convince you for a 15-minute call.</p>
         <div class="actions">
           <a class="btn" href="#match">See the four pieces ↓</a>
           <a class="btn ghost" href="https://snazzy-axolotl-240e64.netlify.app/Pavel_Kokora_CV.pdf" target="_blank" rel="noopener">My CV (PDF)</a>
@@ -358,7 +361,7 @@
         <!-- VIDEO SLOT: add {"video": {"url": "...mp4", "poster": "...jpg", "duration": "1:00"}} to content.json -->
         <div class="video-card placeholder">
           <div class="video-head"><span class="avatar">P</span><div><b>Pavel</b><br><small>Candidate · VP of Product</small></div></div>
-          <div class="video-slot"><span class="play">▶</span><span>A 60-second hello is on its way</span></div>
+          <div class="video-slot"><span class="play">▶</span><span>A 90-second hello is on its way</span></div>
           <div class="video-foot"><span>Video for MEDvidi</span><span>~1:00</span></div>
         </div>
       </div>
@@ -430,7 +433,7 @@
 
 <section class="band dark cta" id="contact">
   <div class="wrap">
-    <h2>So… shall we talk?</h2>
+    <h2>So, Vasili, shall we talk for 15 minutes? :)</h2>
     <div class="actions">
       <a class="btn ghost" href="mailto:pavel.kokora@gmail.com">Email me</a>
       <a class="btn ghost" href="https://t.me/pavelkokora" target="_blank" rel="noopener">Telegram</a>
