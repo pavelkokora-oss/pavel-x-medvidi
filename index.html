@@ -340,6 +340,7 @@
   @media (max-width:760px) { .video-wrap { margin:0 auto; } }
   header.nav .logo { height:30px; width:auto; display:block; }
   footer { display:none; }
+  .video-badge { background:#f4b942; color:#ffffff; font-family:Manrope, sans-serif; font-weight:800; font-size:17px; padding:8px 26px 9px 14px; border-radius:4px 0 0 4px; clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%); box-shadow:none; }
 
 </style>
 </head>
@@ -365,7 +366,10 @@
       <div class="video-wrap">
         <div class="video-card">
           <div class="video-head"><span class="avatar">P</span><div><b>Pavel</b><br><small>Candidate · VP of Product</small></div></div>
-          <video controls playsinline preload="metadata" src="medvidi.mp4" poster="medvidi-poster.jpg"></video>
+          <div class="video-frame"><video controls playsinline preload="metadata" src="medvidi.mp4" poster="medvidi-poster.jpg"></video><span class="video-badge">For Vasili :)</span></div><script>document.querySelectorAll('.video-frame').forEach(function (f) {
+  var v = f.querySelector('video'), b = f.querySelector('.video-badge');
+  v.addEventListener('play', function () { b.style.display = 'none'; });
+});</script>
           <div class="video-foot"><span>Video for MEDvidi</span><span class="vdur">1:33</span></div>
         </div>
       </div>
